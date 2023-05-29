@@ -173,7 +173,7 @@ askButton.addEventListener("click", function () {
       let dateArray = array.map((item) => item.date);
       let countArray = array.map((item) => item.count);
       myChart.data.datasets[0].data = dateArray;
-      myChart.data.labels = countArray;
+		myChart.data.labels = dateArray;
       myChart.update();
     });
   });
